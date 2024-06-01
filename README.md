@@ -19,7 +19,7 @@ This is basically a fork of the ["Arch is the best"](https://wiki.archlinux.org/
 - Java
 - JavaScript
 - Kotlin
-- Lisp
+- Common Lisp
 - Lua
 - Pascal
 - Perl
