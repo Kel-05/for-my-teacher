@@ -13,6 +13,7 @@ This is basically a fork of the ["Arch is the best"](https://wiki.archlinux.org/
 - C#
 - Cobol
 - FORTRAN
+- Go
 - Haskell
 - I use arch btw
 - Java
