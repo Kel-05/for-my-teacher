@@ -11,6 +11,7 @@ else
 fi
 
 clear
+sleep 10
 
 # Bash
 cat $idir/tomelleri.sh

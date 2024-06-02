@@ -11,11 +11,12 @@ fi
 
 # Check if output directory exists, run compile.sh if not
 if [ ! -d out ]; then
-    ./compile.sh
+    ./compile.sh || exit 1
 fi
 
 konsole &> /dev/null -e ./cat.sh $time &
-sleep 0.5
+konsole &> /dev/null -e cava &
+sleep 10; mpv song.webm &> /dev/null &
 clear
 
 # Bash
@@ -102,5 +103,10 @@ clear
 out/tomelleriRust
 sleep $time
 clear
+
+kate tomelleri.txt
+pkill cava
+pkill mpv
+pkill konsole
 
 exit 0
