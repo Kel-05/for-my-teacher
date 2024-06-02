@@ -11,7 +11,6 @@ This is basically a fork of the ["Arch is the best"](https://wiki.archlinux.org/
 - C
 - C++
 - C#
-- Cobol
 - FORTRAN
 - Go
 - Haskell
