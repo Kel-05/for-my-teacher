@@ -1,7 +1,7 @@
 #!/bin/bash
 
 idir="src/interpreted" # Interpreted languages directory
-cdir="src/compiled" # Interpreted languages directory
+cdir="src/compiled" # Compiled languages directory
 
 # Check for time argument, default to 3 if it isn't specified
 if [ $# -gt 0 ]; then
