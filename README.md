@@ -5,12 +5,13 @@ This is basically a fork of the ["Arch is the best"](https://wiki.archlinux.org/
 
 ## Languages used
 
-- BASIC
 - Bash
+- BASIC
 - Brainfuck
 - C
 - C++
 - C#
+- Common Lisp
 - FORTRAN
 - Go
 - Haskell
@@ -18,7 +19,6 @@ This is basically a fork of the ["Arch is the best"](https://wiki.archlinux.org/
 - Java
 - JavaScript
 - Kotlin
-- Common Lisp
 - Lua
 - Pascal
 - Perl

@@ -11,7 +11,7 @@ echo "Compiling..."
 
 # BASIC
 cp $cdir/tomelleri.c $cdir/tomelleri.c.bak
-fbc -x out/tomelleriBasic $cdir/tomelleri.bas
+fbc -x out/tomelleriBASIC $cdir/tomelleri.bas
 mv $cdir/tomelleri.c.bak $cdir/tomelleri.c
 
 # C
@@ -19,9 +19,9 @@ gcc $cdir/tomelleri.c -o out/tomelleriC
 # C++
 g++ $cdir/tomelleri.cpp -o out/tomelleriCPP
 # C#
-mcs $cdir/tomelleri.cs -out:out/tomelleriCS.exe
+mcs $cdir/tomelleri.cs -out:out/tomelleriCS
 # FORTRAN
-gfortran $cdir/tomelleri.f90 -o out/tomelleriF90
+gfortran $cdir/tomelleri.f90 -o out/tomelleriFORTRAN
 # Go
 go build -o out/tomelleriGo $cdir/tomelleri.go
 # Haskell
