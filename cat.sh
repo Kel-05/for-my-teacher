@@ -1,6 +1,7 @@
 #!/bin/bash
 
 idir="src/interpreted" # Interpreted languages directory
+cdir="src/compiled" # Interpreted languages directory
 
 # Check for time argument, default to 3 if it isn't specified
 if [ $# -gt 0 ]; then
@@ -9,97 +10,90 @@ else
     time=3
 fi
 
-# Check if output directory exists, run compile.sh if not
-if [ ! -d out ]; then
-    ./compile.sh
-fi
-
-konsole &> /dev/null -e ./cat.sh $time &
-sleep 0.5
 clear
 
 # Bash
-bash $idir/tomelleri.sh
+cat $idir/tomelleri.sh
 sleep $time
 clear
 # BASIC
-out/tomelleriBASIC
+cat $cdir/tomelleri.bas
 sleep $time
 clear
 # Brainfuck
-brainfuck $idir/tomelleri.bf
+cat $idir/tomelleri.bf
 sleep $time
 clear
 # C
-out/tomelleriC
+cat $cdir/tomelleri.c
 sleep $time
 clear
 # C++
-out/tomelleriCPP
+cat $cdir/tomelleri.cpp
 sleep $time
 clear
 # C#
-out/tomelleriCS
+cat $cdir/tomelleri.cs
 sleep $time
 clear
 # Common Lisp
-clisp src/compiled/tomelleri.lisp
+cat $cdir/tomelleri.lisp
 sleep $time
 clear
 # FORTRAN
-out/tomelleriFORTRAN
+cat $cdir/tomelleri.f90
 sleep $time
 clear
 # Go
-out/tomelleriGo
+cat $cdir/tomelleri.go
 sleep $time
 clear
 # Haskell
-out/tomelleriHaskell
+cat $cdir/tomelleri.hs
 sleep $time
 clear
 # I use arch btw
-i-use-arch-btw $idir/tomelleri.archbtw
+cat $idir/tomelleri.archbtw
 sleep $time
 clear
 # Java
-java -cp out tomelleri
+cat $cdir/tomelleri.java
 sleep $time
 clear
 # JavaScript
-node src/compiled/tomelleri.js
+cat $cdir/tomelleri.js
 sleep $time
 clear
 # Kotlin
-java -jar out/tomelleriKotlin.jar
+cat $cdir/tomelleri.kt
 sleep $time
 clear
 # Lua
-lua $idir/tomelleri.lua
+cat $idir/tomelleri.lua
 sleep $time
 clear
 # Pascal
-out/tomelleriPascal
+cat $cdir/tomelleri.pas
 sleep $time
 clear
 # Perl
-perl $idir/tomelleri.pl
+cat $idir/tomelleri.pl
 sleep $time
 clear
 # PHP
-php $idir/tomelleri.php
+cat $idir/tomelleri.php
 sleep $time
 clear
 # Python
-python $idir/tomelleri.py
+cat $idir/tomelleri.py
 sleep $time
 clear
 # Ruby
-ruby $idir/tomelleri.rb
+cat $idir/tomelleri.rb
 sleep $time
 clear
 # Rust
-out/tomelleriRust
+cat $cdir/tomelleri.rs
 sleep $time
 clear
 
