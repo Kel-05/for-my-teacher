@@ -15,7 +15,7 @@ if [ ! -d out ]; then
 fi
 
 konsole &> /dev/null -e ./cat.sh $time &
-konsole &> /dev/null -e cava &
+konsole &> /dev/null -e cava -p cava/config &
 sleep 10; mpv song.webm &> /dev/null &
 clear
 
