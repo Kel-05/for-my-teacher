@@ -26,3 +26,23 @@ This is basically a fork of the ["Arch is the best"](https://wiki.archlinux.org/
 - Python
 - Ruby
 - Rust
+
+# Dependencies
+
+## Arch
+
+```bash
+sudo pacman -S konsole lua ruby perl php python fpc gcc gcc-fortran mono freebasic go ghc jdk-openjdk kotlin nodejs clisp rust
+```
+
+You'll need to install cava from the AUR, for this an AUR helper can be used.
+
+```bash
+yay -S cava
+```
+
+You'll also need to install [Brainfuck](https://github.com/fabianishere/brainfuck) and [i-use-arch-btw](https://github.com/overmighty/i-use-arch-btw). Check their respective repositories for installation instructions.
+
+# Usage
+
+execute `run.sh`. The script will compile all sources and put them in an `out` directory. If sources have already been compiled the script won't recompile the, so you can safely re-execute it.
