@@ -32,7 +32,7 @@ This is basically a fork of the ["Arch is the best"](https://wiki.archlinux.org/
 ## Arch
 
 ```bash
-sudo pacman -S konsole kate lua ruby perl php python fpc gcc gcc-fortran mono freebasic go ghc jdk-openjdk kotlin nodejs clisp rust
+sudo pacman -S mpv konsole kate lua ruby perl php python fpc gcc gcc-fortran mono freebasic go ghc jdk-openjdk kotlin nodejs clisp rust
 ```
 
 You'll need to install [cava](https://github.com/karlstav/cava) from the AUR, for this an AUR helper can be used.
